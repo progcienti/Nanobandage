@@ -1,0 +1,111 @@
+@media (max-width: 768px) {
+    /* Ajustes gerais */
+    .container {
+        padding: 0 10px; /* Reduz o padding nas laterais */
+    }
+
+    /* Imagens da equipe e pesquisa */
+    .membro img,
+    .pesquisa-item img {
+        width: 80px; /* Diminui o tamanho das imagens */
+        height: 80px; /* Ajusta a altura */
+    }
+
+    h2 {
+        font-size: 24px; /* Reduz o tamanho do título */
+    }
+
+    /* Seções */
+    .content-section {
+        padding: 20px; /* Diminui o padding nas seções */
+    }
+
+    /* Ícones das redes sociais */
+    .social-icons li a img {
+        width: 30px; /* Reduz o tamanho dos ícones */
+        height: 30px; /* Ajusta a altura */
+    }
+
+    /* Endereço */
+    .endereco {
+        font-size: 1em; /* Ajusta o tamanho da fonte do endereço */
+    }
+}
+
+/* Estilos para telas menores que 480px */
+@media (max-width: 767px) {
+    .localizacao-section {
+        padding: 20px;
+    }
+
+    .localizacao-section h3 {
+        font-size: 24px;
+    }
+
+    .map-container iframe {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes adicionais */
+    h2 {
+        font-size: 20px; /* Reduz ainda mais o tamanho do título */
+    }
+
+    .social-media h3 {
+        font-size: 18px; /* Reduz o tamanho do título das redes sociais */
+    }
+}
+
+@media (max-width: 768px) {
+    .map-container iframe {
+        height: 300px; /* Altura ajustada para tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .map-container iframe {
+        height: 200px; /* Altura ajustada para smartphones */
+    }
+}
+
+.endereco {
+    text-align: center; /* Centraliza o texto do endereço */
+    color: black;
+    font-size: 1.1em; /* Tamanho de fonte maior para melhor legibilidade */
+    margin-top: 10px; /* Espaçamento em cima do endereço */
+}
+
+/* Ajustes para a seção de endereço em telas menores */
+@media (max-width: 768px) {
+    .endereco {
+        font-size: 1em; /* Diminui o tamanho da fonte em tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .endereco {
+        font-size: 0.9em; /* Diminui o tamanho da fonte em smartphones */
+    }
+}
+
+.endereco p {
+    margin: 0; /* Remove margens extras do parágrafo */
+    font-weight: bold; /* Dá destaque ao texto do endereço */
+}
+
+.endereco::before {
+    content: url('icones/352521_location_on_icon.svg'); /* Insere um ícone de localização antes do texto */
+    display: inline-block;
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    vertical-align: middle; /* Alinha o ícone ao texto */
+}
+
+/* Ajustes para o ícone de localização em telas menores */
+@media (max-width: 480px) {
+    .endereco::before {
+        width: 20px; /* Ajusta o tamanho do ícone para smartphones */
+        height: 20px; /* Ajusta a altura do ícone */
+    }
+}

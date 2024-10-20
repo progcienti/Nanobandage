@@ -1,0 +1,231 @@
+@import url('celstyle.css');
+
+/* Layout geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+.logo-nome-container {
+    display: block;
+    align-items: center;
+}
+
+.logo {
+    width: 120px; /* Ajuste a largura da logo */
+    height: auto;
+    margin-right: 10px;
+}
+
+header {
+    background-color: #00796b;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: block;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #004d40;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Imagens com efeitos */
+/* Estilos normais para as imagens de pesquisa */
+/* Imagens com efeitos */
+.equipe-container, .pesquisa-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.membro, .pesquisa-item {
+    text-align: center;
+}
+
+/* Imagens normais (miniatura) */
+.membro img, .pesquisa-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.membro img:hover, .pesquisa-item img:hover {
+    transform: scale(1.5); /* Aumenta o tamanho da imagem */
+    object-fit: contain; /* Faz a imagem caber dentro do contêiner sem ser cortada */
+    border-radius: 0%; /* Remove o efeito de borda arredondada */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Seções */
+.content-section {
+    padding: 40px;
+    background-color: #ffffff;
+    margin: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #00796b;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.produto-imagem {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.produto-imagem img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+#bibliografia h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#bibliografia h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.bibliografia-list {
+    list-style-type: none;  
+    padding-left: 0;
+}
+
+.bibliografia-list li {
+    margin-bottom: 15px;  
+    font-size: 16px;
+    line-height: 1.6;  
+}
+
+.bibliografia-list li::before {
+    content: "• "; 
+    color: #004d40;  
+}
+
+/* Iconces das redes socias */
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons li a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease; 
+}
+
+.social-icons li a img:hover {
+    transform: scale(1.2); 
+}
+
+.social-media h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Estilos para a seção de localização */
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px; /* Adiciona espaçamento ao redor do mapa */
+}
+
+.map-container iframe {
+    width: 100%;
+    max-width: 100%; /* Garante que o mapa ocupe a largura completa */
+    height: 400px;
+    border: 2px solid #00563f;
+    border-radius: 8px;
+}
+
+.endereco {
+    text-align: center; /* Centraliza o texto do endereço */
+    color: black;
+    font-size: 1.1em; /* Tamanho de fonte maior para melhor legibilidade */
+    margin-top: 10px; /* Espaçamento em cima do endereço */
+}
+
+.endereco p {
+    margin: 0; /* Remove margens extras do parágrafo */
+    font-weight: bold; /* Dá destaque ao texto do endereço */
+}
+
+.endereco::before {
+    content: url('icones/352521_location_on_icon.svg'); /* Insere um ícone de localização antes do texto */
+    display: inline-block;
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    vertical-align: middle; /* Alinha o ícone ao texto */
+}
+
+/* Adicionando responsividade */
+
+
+
